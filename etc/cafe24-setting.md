@@ -5,7 +5,7 @@ node.js 호스팅은 일반적인 웹호스팅과는 달리 FTP 를 통한 파�
 ## cafe24 node hosting 설정하기
 1. node.js 앱 생성
 
-![image1](../images/image1)
+![image1](../images/image1.png)
 
 2. [ssh public key 생성](https://help.cafe24.com/cs/cs_manual_view.php?idx=46&page=1&categoryIdx=509&s_key=&s_value=&man_no=1) -> "4. ssh public key 생성"을 따라서 public key를 생성합니다. 
 
