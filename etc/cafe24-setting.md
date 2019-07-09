@@ -46,8 +46,8 @@ public key 이름은 알아볼 수 있는 이름으로 입력하시면 됩니다
 
 ![image2](../images/image2.png)
 
-저장소의 주소가 node code를 upload할 git 저장소 주소입니다.
-위의 주소에 작성한 node server code를 upload할 것입니다.
+위의 사진에서 저장소의 주소가 node code를 upload할 git 저장소 주소입니다.
+위의 git 주소에 작성한 node server code를 upload할 것 입니다.
 
 upload하는 방법
 
