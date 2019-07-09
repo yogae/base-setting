@@ -13,7 +13,8 @@ nvm(Node Version Manager)을 설치하여 node의 version을 관리할 수 있�
 nvm install v8.5.0
 
 ## 설치 가능한 node version list
-nvm ls-remote
+nvm ls-remote # on linux
+nvm list available # 또는 nvm ls available # on window 
 
 ## 설치 되어있는 node version list
 nvm ls

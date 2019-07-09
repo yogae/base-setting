@@ -24,20 +24,48 @@ Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
 > Enter same passphrase again: [Type passphrase again]
-
 ```
+
+key 생성 위치에 들어가면(/Users/you/.ssh/id_rsa)id_rsa와 id_rsa.pub 파일이 생성될 것입니다. id_rsa는 private key이고 id_rsa.pub는 public key 입니다.
 
 3. public key를 cafe24에 등록하기
 
 ![image3](../images/image3.png)
 
+public key 이름은 알아볼 수 있는 이름으로 입력하시면 됩니다.
+2번에서 생성한 id_rsa.pub의 내용은 public key 입력란에 복사해서 넣습니다.
+
 4. public key 할당하기
 
 ![image4](../images/image4.png)
 
-5. cafe24 git 설정
+3번에서 public key 이름으로 지정하신 key를 할당합니다.
+
+5. cafe24 git 설정 - git 설정은 node server code가 있는 folder에서 실행해야 합니다. 
 
 ![image2](../images/image2.png)
+
+저장소의 주소가 node code를 upload할 git 저장소 주소입니다.
+위의 주소에 작성한 node server code를 upload할 것입니다.
+
+upload하는 방법
+
+```bash
+# 1. git remote 저장소 등록
+git remote add origin <5번에서 저장소의 주소>
+
+# 이미 origin이라는 이름으로 저장소가 등록되어 있는 경우 아래의 명령어 실행 후 위의 1번 다시 실행
+# git remote remove origin
+
+# 변경된 사항을 추가
+git add .
+
+# 변경된 file local에 저장
+git commit -m "<변경사항에 대한 message>"
+
+# origin remote 저장소 master branch에 upload
+git push origin master
+```
 
 ## 주의사항
 
