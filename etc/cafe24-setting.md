@@ -3,11 +3,12 @@
 node.js 호스팅은 일반적인 웹호스팅과는 달리 FTP 를 통한 파일 업로드를 지원하지 않습니다. 로컬 PC에서 작업한 결과물을 서버에 업로드 하려면 git를 이용하여 파일을 업로드 해야 합니다.
 
 ## cafe24 node hosting 설정하기
-1. node.js 앱 생성
+
+### 1. node.js 앱 생성
 
 ![image1](../images/image1.png)
 
-2. [ssh public key 생성](https://help.cafe24.com/cs/cs_manual_view.php?idx=46&page=1&categoryIdx=509&s_key=&s_value=&man_no=1) -> "4. ssh public key 생성"을 따라서 public key를 생성합니다. 
+### 2. [ssh public key 생성](https://help.cafe24.com/cs/cs_manual_view.php?idx=46&page=1&categoryIdx=509&s_key=&s_value=&man_no=1) -> "4. ssh public key 생성"을 따라서 public key를 생성합니다. 
 
 ```
 # 간략한 설명 추가 
@@ -28,20 +29,20 @@ Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 
 key 생성 위치에 들어가면(/Users/you/.ssh/id_rsa)id_rsa와 id_rsa.pub 파일이 생성될 것입니다. id_rsa는 private key이고 id_rsa.pub는 public key 입니다.
 
-3. public key를 cafe24에 등록하기
+### 3. public key를 cafe24에 등록하기
 
 ![image3](../images/image3.png)
 
 public key 이름은 알아볼 수 있는 이름으로 입력하시면 됩니다.
 2번에서 생성한 id_rsa.pub의 내용은 public key 입력란에 복사해서 넣습니다.
 
-4. public key 할당하기
+### 4. public key 할당하기
 
 ![image4](../images/image4.png)
 
 3번에서 public key 이름으로 지정하신 key를 할당합니다.
 
-5. cafe24 git 설정 - git 설정은 node server code가 있는 folder에서 실행해야 합니다. 
+### 5. cafe24 git 설정 - git 설정은 node server code가 있는 folder에서 실행해야 합니다. 
 
 ![image2](../images/image2.png)
 
